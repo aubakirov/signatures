@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
+
 class HomeController extends Controller
 {
     /**
@@ -33,5 +35,10 @@ class HomeController extends Controller
     public function test()
     {
         return [];
+    }
+
+    public function getCurrentYear ()
+    {
+        return Carbon::now()->year;
     }
 }
