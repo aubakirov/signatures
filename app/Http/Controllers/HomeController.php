@@ -24,6 +24,12 @@ class HomeController extends Controller
         return view('home');
     }
 
+
+    /*
+     * Create testpage method
+     *
+     * @return array
+     */
     public function test()
     {
         return [];
