@@ -17,6 +17,6 @@ use App\Http\Controllers\SignatureController;
 
 
 Auth::routes();
-
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/test', [HomeController::class, 'test'])->name('test');
 Route::get('/signatures', [SignatureController::class, 'index'])->name('home');
