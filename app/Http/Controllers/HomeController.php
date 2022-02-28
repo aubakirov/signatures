@@ -51,4 +51,10 @@ class HomeController extends Controller
     {
         return Carbon::now()->day;
     }
+
+    public function getDate()
+    {
+        return $this->getCurrentDay() . $this->getCurrentMonth() . $this->getCurrentYear();
+    }
+
 }
