@@ -41,4 +41,9 @@ class HomeController extends Controller
     {
         return Carbon::now()->year;
     }
+
+    public function getCurrentMonth()
+    {
+        return Carbon::now()->year;
+    }
 }
