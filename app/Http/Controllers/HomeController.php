@@ -25,8 +25,6 @@ class HomeController extends Controller
     {
         return view('home');
     }
-
-
     /*
      * Create testpage method
      *
@@ -56,5 +54,4 @@ class HomeController extends Controller
     {
         return $this->getCurrentDay() . $this->getCurrentMonth() . $this->getCurrentYear();
     }
-
 }
